@@ -1,41 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <link rel="stylesheet" href="../tailwind_theme/tailwind.css"/>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="stylesheet" href="../tailwind_theme/tailwind.css" />
         <title>New page</title>
-        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <script>
+            /* Pinegrow Interactions, do not remove */ (function () {
+                try {
+                    if (
+                        !document.documentElement.hasAttribute(
+                            "data-pg-ia-disabled"
+                        )
+                    ) {
+                        window.pgia_small_mq =
+                            typeof pgia_small_mq == "string"
+                                ? pgia_small_mq
+                                : "(max-width:767px)";
+                        window.pgia_large_mq =
+                            typeof pgia_large_mq == "string"
+                                ? pgia_large_mq
+                                : "(min-width:768px)";
+                        var style = document.createElement("style");
+                        var pgcss =
+                            'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';
+                        if (
+                            document.documentElement.hasAttribute(
+                                "data-pg-id"
+                            ) &&
+                            document.documentElement.hasAttribute(
+                                "data-pg-mobile"
+                            )
+                        ) {
+                            pgia_small_mq = "(min-width:0)";
+                            pgia_large_mq = "(min-width:99999px)";
+                        }
+                        pgcss +=
+                            "@media " +
+                            pgia_small_mq +
+                            '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';
+                        pgcss +=
+                            "@media " +
+                            pgia_large_mq +
+                            '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';
+                        style.innerHTML = pgcss;
+                        document.querySelector("head").appendChild(style);
+                    }
+                } catch (e) {
+                    console && console.log(e);
+                }
+            })();
+        </script>
     </head>
     <body>
         <section class="pg-empty-placeholder"></section>
-        <ul class="flex flex-col font-light items-start menulist__nav--mainmenu text-gray-700 uppercase lg:flex-row lg:items-center" data-pg-name="Menu List" aria-label="Main Menu" role="menu" data-pgc-define="main_menu" data-pgc-define-name="Main Menu">
-            <li class="delay-150 duration-200 ease-in-out lg:focus-within:bg-gray-700 lg:focus-within:text-white lg:hover:bg-gray-700 lg:hover:text-white px-4 py-2 relative rounded rounded-tl rounded-tr submenu-top__nav--mainmenu transition-all" ata-pg-name="Has Submenu" aria-haspopup="menu" role="presentation" data-pg-ia='{"l":[{"name":"Hide submenu on mouse leave","trg":"mouseleave","a":"Hide Submenu Timeline","rstr":"true","rcr":"true","t":"this"},{"name":"Hide submenu by esc key","trg":"keydown","keys":"Escape","t":"$[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"name":"Show Submenu on mouseenter","trg":"mouseenter","t":"this","a":"Show Submenu Timeline","rstr":"true","rcr":"true"},{"name":"Show Submenu Timeline","trg":"no","t":"this","a":{"l":[{"t":"[data-pg-name=\"Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"class.remove":"hidden"}}]},{"t":"$[data-pg-name=\"Submenu Trigger\"]","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"aria-expanded":"true"}}}]},{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"rounded","class.add":"menu-opened"}}]}]}},{"name":"Hide Submenu Timeline","trg":"no","t":"this","a":{"l":[{"t":"[data-pg-name=\"Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"class.add":"hidden"}}]},{"t":"$[data-pg-name=\"Submenu Trigger\"]","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"aria-expanded":"false"}}}]},{"t":"$[data-pg-name=\"Menu with Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"rounded","class.remove":"menu-opened"}}]}]}}]}' data-pg-name="Menu with Submenu">
-                <a class="before:fixed before:left-0 before:top-0 before:hidden cursor-default before:cursor-default flex focus:underline before:h-full items-center no-underline submenu-trigger__nav--mainmenu before:w-full" href="#submenu-trigger" role="link" aria-expanded="false" data-pg-name="Submenu Trigger" data-pg-ia='{"l":[{"name":"Show submenu on click or enter key","trg":"click","keys":"Enter","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Show Submenu Timeline","tc":"no-class","tca":"aria-expanded","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"name":"Hide submenu by Kbd top menu item","trg":"keydown","keys":"Enter, Escape","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","tc":"class","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"trg":"touchstart","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","tc":"class","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true","name":"Hide on touch"}]}'><span class="pr-1">Home</span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16" :class="{'rotated': open}" class="top-0 right-0 transform rotate-90 lg:inline-block" viewBox="0 0 16 16" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg></a>
-                <ul class="bg-gray-700 delay-150 duration-200 ease-in-out flex-col hidden left-0 py-2 rounded-bl rounded-br rounded-tr submenu__nav--mainmenu text-white top-10 transition-all w-56 lg:absolute lg:flex" data-pg-name="Submenu" aria-label="submenu" role="group" data-pg-ia-hide>
-                    <li role="group" class="px-4 py-2 focus-within:bg-gray-900 hover:bg-gray-900">
-                        <a href="#" role="link" class="no-underline focus:underline hover:underline" role="menuitem">Sub Menu One</a>
+        <ul
+            class="flex flex-col font-light items-start menulist__nav--mainmenu text-gray-700 uppercase lg:flex-row lg:items-center"
+            data-pg-name="Menu List"
+            aria-label="Main Menu"
+            role="menu"
+            data-pgc-define="main_menu"
+            data-pgc-define-name="Main Menu"
+        >
+            <li
+                class="delay-150 duration-200 ease-in-out lg:focus-within:bg-gray-700 lg:focus-within:text-white lg:hover:bg-gray-700 lg:hover:text-white px-4 py-2 relative rounded rounded-tl rounded-tr submenu-top__nav--mainmenu transition-all"
+                ata-pg-name="Has Submenu"
+                aria-haspopup="menu"
+                role="presentation"
+                data-pg-ia='{"l":[{"name":"Hide submenu on mouse leave","trg":"mouseleave","a":"Hide Submenu Timeline","rstr":"true","rcr":"true","t":"this"},{"name":"Hide submenu by esc key","trg":"keydown","keys":"Escape","t":"$[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"name":"Show Submenu on mouseenter","trg":"mouseenter","t":"this","a":"Show Submenu Timeline","rstr":"true","rcr":"true"},{"name":"Show Submenu Timeline","trg":"no","t":"this","a":{"l":[{"t":"[data-pg-name=\"Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":1,"class.remove":"hidden"}}]},{"t":"$[data-pg-name=\"Submenu Trigger\"]","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"aria-expanded":"true"}}}]},{"t":"","l":[{"t":"set","p":0,"d":0,"l":{"class.remove":"rounded","class.add":"menu-opened"}}]}]}},{"name":"Hide Submenu Timeline","trg":"no","t":"this","a":{"l":[{"t":"[data-pg-name=\"Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"autoAlpha":0,"class.add":"hidden"}}]},{"t":"$[data-pg-name=\"Submenu Trigger\"]","l":[{"t":"set","p":0,"d":0,"l":{"attr":{"aria-expanded":"false"}}}]},{"t":"$[data-pg-name=\"Menu with Submenu\"]","l":[{"t":"set","p":0,"d":0,"l":{"class.add":"rounded","class.remove":"menu-opened"}}]}]}}]}'
+                data-pg-name="Menu with Submenu"
+            >
+                <a
+                    class="before:fixed before:left-0 before:top-0 before:hidden cursor-default before:cursor-default flex focus:underline before:h-full items-center no-underline submenu-trigger__nav--mainmenu before:w-full"
+                    href="#submenu-trigger"
+                    role="link"
+                    aria-expanded="false"
+                    data-pg-name="Submenu Trigger"
+                    data-pg-ia='{"l":[{"name":"Show submenu on click or enter key","trg":"click","keys":"Enter","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Show Submenu Timeline","tc":"no-class","tca":"aria-expanded","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"name":"Hide submenu by Kbd top menu item","trg":"keydown","keys":"Enter, Escape","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","tc":"class","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true"},{"trg":"touchstart","t":"^[data-pg-name=\"Menu with Submenu\"]","a":"Hide Submenu Timeline","tc":"class","tcv":"menu-opened","pdef":"true","rstr":"true","rcr":"true","rst":"true","name":"Hide on touch"}]}'
+                    ><span class="pr-1">Home</span
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        width="16"
+                        height="16"
+                        :class="{'rotated': open}"
+                        class="top-0 right-0 transform rotate-90 lg:inline-block"
+                        viewBox="0 0 16 16"
+                        aria-hidden="true"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                        ></path></svg
+                ></a>
+                <ul
+                    class="bg-gray-700 delay-150 duration-200 ease-in-out flex-col hidden left-0 py-2 rounded-bl rounded-br rounded-tr submenu__nav--mainmenu text-white top-10 transition-all w-56 lg:absolute lg:flex"
+                    data-pg-name="Submenu"
+                    aria-label="submenu"
+                    role="group"
+                    data-pg-ia-hide
+                >
+                    <li
+                        role="group"
+                        class="px-4 py-2 focus-within:bg-gray-900 hover:bg-gray-900"
+                    >
+                        <a
+                            href="#"
+                            role="link"
+                            class="no-underline focus:underline hover:underline"
+                            role="menuitem"
+                            >Sub Menu One</a
+                        >
                     </li>
-                    <li role="group" class="px-4 py-2 focus-within:bg-gray-900 hover:bg-gray-900">
-                        <a href="#" role="link" class="no-underline focus:underline hover:underline" role="menuitem">Sub Menu Two</a>
+                    <li
+                        role="group"
+                        class="px-4 py-2 focus-within:bg-gray-900 hover:bg-gray-900"
+                    >
+                        <a
+                            href="#"
+                            role="link"
+                            class="no-underline focus:underline hover:underline"
+                            role="menuitem"
+                            >Sub Menu Two</a
+                        >
                     </li>
                 </ul>
             </li>
-            <li role="group" class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all">
-                <a href="#" class="no-underline focus:underline hover:underline" role="menuitem">About</a>
+            <li
+                role="group"
+                class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all"
+            >
+                <a
+                    href="#"
+                    class="no-underline focus:underline hover:underline"
+                    role="menuitem"
+                    >About</a
+                >
             </li>
-            <li role="group" class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all">
-                <a href="#" class="no-underline focus:underline hover:underline" role="menuitem">Features</a>
+            <li
+                role="group"
+                class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all"
+            >
+                <a
+                    href="#"
+                    class="no-underline focus:underline hover:underline"
+                    role="menuitem"
+                    >Features</a
+                >
             </li>
-            <li role="group" class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all">
-                <a href="#" class="no-underline focus:underline hover:underline" role="menuitem">Services</a>
+            <li
+                role="group"
+                class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all"
+            >
+                <a
+                    href="#"
+                    class="no-underline focus:underline hover:underline"
+                    role="menuitem"
+                    >Services</a
+                >
             </li>
-            <li role="group" class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all">
-                <a href="#" class="no-underline focus:underline hover:underline" role="menuitem">Contact</a>
+            <li
+                role="group"
+                class="delay-150 duration-200 ease-in-out focus-within:bg-gray-700 focus-within:text-white hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-all"
+            >
+                <a
+                    href="#"
+                    class="no-underline focus:underline hover:underline"
+                    role="menuitem"
+                    >Contact</a
+                >
             </li>
         </ul>
         <script src="../pgia/lib/pgia.js"></script>
